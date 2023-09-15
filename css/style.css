@@ -1,0 +1,216 @@
+:root{
+    --body: #1f212c;
+    --primary-color: #18122B;
+    --fontSize-title: 40px;
+    --fontSize--parrafos: 20px;
+}
+
+
+body{
+    background:#18122B;
+}
+
+nav .bg-portafolio{
+    background-color: var(--bg-body);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    top: 30px;
+}
+
+nav .navbar-brand img{
+    width: 200px;
+}
+
+
+nav.bg-portafolio ul li{
+    margin-top: 14px;
+}
+
+nav.bg-portafolio ul li a{
+   color: #a93434;
+   position: relative;
+   font-size: 20px;
+   margin: 0 12px;
+}
+
+nav.bg-portafolio ul li a::after{
+    width:0;
+    height: 2px;
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-gym ul li a:hover{
+    color: var(--primary-color);
+}
+
+nav.bg-portafolio ul li a:hover::after{
+    width: 40%;
+    background: var(--primary-color);
+}
+
+nav.bg-portafolio ul li.login{
+    margin-left: 300px;
+    margin-right: 30px;
+}
+
+nav.bg-portafolio ul li.registro a{
+    display: block;
+    padding: 12px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color: #fafafa;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+#hero{
+    padding: 160px 0; 
+}
+
+#hero .cont-foto{
+    position: absolute;
+    width: 400px;
+    left: 300px;
+}
+
+#hero .cont-foto img{
+    z-index: 2;
+    position:relative;
+    width: 300px;
+}
+
+
+
+#hero .cont-info{
+    padding-left: 60px;
+} 
+
+#hero .cont-info h1{
+    color: #fff;
+    font-size:60px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#hero .cont-info h1 span{
+    border-bottom: 8px solid #fff;
+}
+
+#hero .cont-info p{
+    color: #c6c6c6;
+    font-size: var(--fontSize-parrafos);
+    margin-bottom: 60px;
+}
+
+#estudios{
+    width: 100%;
+    position: relative;
+    padding: 160px 0 100px;
+    text-align: center;
+}
+
+#estudios h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#estudios p{
+    color: #fefefe;
+    font-size: var(--fontSize-parrafos);
+}
+
+#estudios .row{
+    padding: 70px;
+}
+
+#estudios .card-service{
+    background: #635985;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px ;
+    text-align: left;
+    transition: .4s;
+    margin-bottom: 40px ;
+}
+#estudios .card-service:hover{
+    background-color: var(--primary-color);
+}
+
+#estudios .card-service img{
+    background: #fff;
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top:-30px;
+    left: 30px;
+}
+
+#estudios .card-service h3{
+    text-align: right;
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#estudios .card-service h4{
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#estudios .card-service p{
+    font-size: 15px;
+    color: #c6c6c6;
+    text-align: left;
+    line-height: 30px ;
+}
+
+#estudios.card-service a{
+    color: #c6c6c6;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid #fbf9f9;
+}
+
+
+
+
+
+#experiencias{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 40px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+#experiencias.carousel-item{
+    background: #2c5bff;
+    padding: 120px 80px;
+    border-radius: 20px;
+}
+
+#experiencias.carousel-item h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
